@@ -10,6 +10,14 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+#ignore mirror-related files
+/[Aa]ssets/Mirror
+/[Aa]ssets/Mirror.meta
+/[/a]Assets/StreamingAssets
+/[/a]Assets/StreamingAssets.meta
+/[/a]Assets/ScriptTemplates
+/[/a]Assets/ScriptTemplates.meta
+
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
@@ -62,3 +70,45 @@ sysinfo.txt
 crashlytics-build.properties
 
 
+
+Assets/Mirror.meta
+
+Assets/ScriptTemplates.meta
+
+Assets/ScriptTemplates/50-Mirror__Network Manager-NewNetworkManager.cs.txt
+
+Assets/ScriptTemplates/50-Mirror__Network Manager-NewNetworkManager.cs.txt.meta
+
+Assets/ScriptTemplates/51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt
+
+Assets/ScriptTemplates/51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt.meta
+
+Assets/ScriptTemplates/52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt
+
+Assets/ScriptTemplates/52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt.meta
+
+Assets/ScriptTemplates/53-Mirror__Network Observer-NewNetworkObserver.cs.txt
+
+Assets/ScriptTemplates/53-Mirror__Network Observer-NewNetworkObserver.cs.txt.meta
+
+Assets/ScriptTemplates/54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt
+
+Assets/ScriptTemplates/54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt.meta
+
+Assets/ScriptTemplates/55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt
+
+Assets/ScriptTemplates/55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt.meta
+
+Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt
+
+Assets/ScriptTemplates/56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt.meta
+
+Assets/StreamingAssets.meta
+
+Assets/StreamingAssets/PerformanceTestResults.json
+
+Assets/StreamingAssets/PerformanceTestResults.json.meta
+
+Assets/StreamingAssets/TestResults.xml
+
+Assets/StreamingAssets/TestResults.xml.meta
