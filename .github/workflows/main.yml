@@ -32,14 +32,14 @@ jobs:
 
       # Build StandaloneWindows64
       - name: Build Windows64
-        uses: webbertakken/unity-builder@v1.1
+        uses: webbertakken/unity-builder@v1.0
         with:
           unityVersion: 2019.4.1f1
           targetPlatform: StandaloneWindows64
 
       # Build WebGL
       - name: Build WebGL
-        uses: webbertakken/unity-builder@v1.1
+        uses: webbertakken/unity-builder@v1.0
         with:
           unityVersion: 2019.4.1f1
           targetPlatform: WebGL
