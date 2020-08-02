@@ -1,22 +1,24 @@
-﻿using System.Collections;
+﻿using Mirror;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
+using UnityEngine.InputSystem;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target;
-    public float lookSmooth = 0.1f;
-    public Vector3 offsetFromTarget;
-    public float xTilt;
+    [Header("Camera")]
+    [SerializeField] private Vector2 maxFollowOffset = Vector2.zero;
+    [SerializeField] private Vector2 cameraVelocity = new Vector2(4, 0.5f);
+    [SerializeField] private Transform playerTransform = null;
+    [SerializeField] private CinemachineVirtualCamera virtualCamera = null;
 
-    Vector3 destination = Vector3.zero;
-    PlayerController player;
-    float rotateVel;
+    private CinemachineTransposer transposer;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        SetCameraTarget(target);
+        transposer = virtualCamera.GetCinemachineComponent<CinemachineTransposer>();
     }
 
     // Update is called once per frame
@@ -25,35 +27,13 @@ public class CameraController : MonoBehaviour
         
     }
 
-    private void LateUpdate()
+    public void OnPlayerLook(InputAction.CallbackContext context)
     {
-        // moving
-        MoveToTarget();
-        // rotating
-        LookAtTarget();
+        Vector2 lookAxis = context.ReadValue<Vector2>();
+        float followOffset = Mathf.Clamp(transposer.m_FollowOffset.y - cameraVelocity.y * lookAxis.y * Time.deltaTime, maxFollowOffset.x, maxFollowOffset.y);
+        transposer.m_FollowOffset.y = followOffset;
+        playerTransform.Rotate(0, lookAxis.x * cameraVelocity.x * Time.deltaTime, 0);
     }
 
-    void SetCameraTarget(Transform t)
-    {
-        target = t;
-        if (target != null)
-        {
-            if (target.GetComponent<PlayerController>())
-                player = GetComponent<PlayerController>();
-            else
-                Debug.LogError("this target needs a player controller");
-        }
-    }
-
-    void MoveToTarget()
-    {
-        destination = player.TargetRotation * offsetFromTarget;
-        destination += target.position;
-        transform.position = destination;
-    }
-
-    void LookAtTarget()
-    {
-    
-    }
+   
 }
