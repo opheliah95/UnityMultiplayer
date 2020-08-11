@@ -441,6 +441,7 @@ MonoBehaviour:
       m_Bits: 256
   playerPhysSettings:
     downAccelForce: 0.75
+  anim: {fileID: 1489898067}
   forwardInput: 0
   turnInput: 0
   velocity: {x: 0, y: 0, z: 0}
@@ -1062,8 +1063,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881554158}
-  m_LocalRotation: {x: 0.023910377, y: -0.04985584, z: 0.0011938992, w: 0.9984695}
-  m_LocalPosition: {x: -3.8488584, y: 3.551611, z: -12.199999}
+  m_LocalRotation: {x: 0.13205953, y: -0.04943227, z: 0.0065940307, w: 0.98998654}
+  m_LocalPosition: {x: -3.8488584, y: 5.799817, z: -12.199999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1185,8 +1186,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025065525}
-  m_LocalRotation: {x: 0.023910377, y: -0.04985584, z: 0.0011938992, w: 0.9984695}
-  m_LocalPosition: {x: 0.0011415482, y: 1.481611, z: -9.999999}
+  m_LocalRotation: {x: 0.13205953, y: -0.04943227, z: 0.0065940307, w: 0.98998654}
+  m_LocalPosition: {x: 0.0011415482, y: 3.7298172, z: -9.999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2061413767}
@@ -1373,7 +1374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0.001141664, y: 1.481611, z: -9.999999}
+  m_FollowOffset: {x: 0.001141664, y: 3.729817, z: -9.999999}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
