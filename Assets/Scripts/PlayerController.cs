@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
     public PhysSettings playerPhysSettings;
     [Space]
 
+    [Header("Physics Settings")]
+    public Animator anim;
+    [Space]
+
     Rigidbody rb;
     [SerializeField]
     float forwardInput, turnInput;
@@ -58,6 +62,7 @@ public class PlayerController : MonoBehaviour
     {
         velocity.z = context.ReadValue<Vector2>().y * playerMoveSettings.runSpeed;
         velocity.x = context.ReadValue<Vector2>().x * playerMoveSettings.runSpeed;
+        anim.SetBool("canRun", (velocity != Vector3.zero));
     }
 
     private void StartMovement()
