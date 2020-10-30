@@ -10,13 +10,6 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
-#ignore mirror-related files
-/[Aa]ssets/Mirror
-/[Aa]ssets/Mirror.meta
-/[/a]Assets/StreamingAssets
-/[/a]Assets/StreamingAssets.meta
-/[/a]Assets/ScriptTemplates
-/[/a]Assets/ScriptTemplates.meta
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta

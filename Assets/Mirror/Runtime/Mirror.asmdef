@@ -1,0 +1,16 @@
+{
+    "name": "Mirror",
+    "references": [
+        "Mirror.CompilerSymbols",
+        "Ninja.WebSockets"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

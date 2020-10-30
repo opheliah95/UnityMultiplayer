@@ -35,6 +35,7 @@ jobs:
         uses: webbertakken/unity-builder@v1.0
         with:
           unityVersion: 2019.4.1f1
+          allowDirtyBuild: true
           targetPlatform: StandaloneWindows64
 
       # Build WebGL
@@ -42,6 +43,7 @@ jobs:
         uses: webbertakken/unity-builder@v1.0
         with:
           unityVersion: 2019.4.1f1
+          allowDirtyBuild: true
           targetPlatform: WebGL
 
       # Output
